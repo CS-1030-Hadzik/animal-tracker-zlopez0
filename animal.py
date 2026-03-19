@@ -1,17 +1,19 @@
 class Animal:
     """
-    Base class representing a generic animal.
+    Base class representing a generic animal. Parent Class. Highest Level
     """
     # Class-level attribute
     kingdom = "Animalia"
     # TODO create a class-level attribute that is a list of all the Animal objects
+        # name = describe the animal
+        # species = describe the species
+    
+    def __init__(self, name, species): 
+        self.name = name
+        self.species = species
 
-    # TODO create the initializer for Animal with name and species as attributs
-
-    # TODO: Add a method to make a generic sound 
-    # Call the method `speak` and make it output a specific message like 
-    # "The animal makes a noise.""
-
-    # TODO __str__ method for string representation
-    # Example output
-    # Kingdom: 'kingdom attribute', Name: 'name attribute' Species: 'species attribute' 
+    def speak(self):
+        print("The animal makes a noise")
+    
+    def __str__(self):
+        return f"Kingdom: {self.kingdom}\n Name: {self.name}\n Species: {self.species}\n"
