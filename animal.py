@@ -14,7 +14,7 @@ class Animal:
 
     # class method
     def speak(self): # pass self error methods 0 arguments expected 1
-        print("The animal makes a noise")
+        print("The animal makes a noise\n")
     
     # overiding the print function
     def __str__(self):
